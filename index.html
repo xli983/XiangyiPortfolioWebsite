@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+  <title>Xiangyi Li</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#intro">
+            <h1><span>X</span>iangyi <span>L</span>i</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Intro -->
+  <section id="intro">
+    <div class="video-container">
+      <video autoplay loop muted playsinline>
+        <source src="./img/bg-video-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="intro container">
+      <div>
+        <h1>Hi, I'm Jessica</h1>
+        <h1>I am a <span class="typing-effect"></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>    
+  </section>
+  <!-- End Intro Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/about.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Computational Media Student From Georgia Tech</h2>
+        <p>
+          Hi, I'm Jessica! I'm a rising senior at Georgia Institute of Technology, 
+          majoring in Computational Media with a concentration in Game and Media. 
+          My focus areas include game development, technical art, and digital art.
+        </p>
+        <p>  
+          I've interned at 
+          <a href="https://www.octmedia.com/en/" target="_blank" rel="noopener noreferrer">October Media</a>
+          , where I worked as a Technical Artist on their upcoming 3D animation 
+          projects using Unreal Engine 5. I'm also the co-founder of Ranji Art, 
+          a company founded by Georgia Tech students to create a cross-platform 
+          drawing application that integrates generative AI assistance in a way 
+          that preserves artists' creativity.
+        </p>
+        <p> 
+          In addition to drawing and coding, my interests include practicing Japanese kendo, 
+          playing the electric guitar, and handcrafting cosplay props and costumes.
+        </p>
+        
+        <a href="#" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item" data-url="phantom-train.html">
+          <div class="project-info">
+            <h1>Phantom Train</h1>
+            <div class="project-tags">
+              <span class="tag">GameMaker</span>
+              <span class="tag">2D Art</span>
+              <span class="tag">Programming: GML</span>
+            </div>
+            <p>A single-player, turn-based roguelike deckbuilder made with GameMaker.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/phantom-train/cover.jpg" alt="Phantom Train Cover" class="project-image">
+            <video class="project-video" muted loop autoplay playsinline>
+              <source src="./img/phantom-train/cover-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        
+        
+        <div class="project-item" data-url="glsl-project.html">
+          <div class="project-info">
+            <h1>GLSL Project</h1>
+            <div class="project-tags">
+              <span class="tag">Computer Graphics</span>
+              <span class="tag">Design</span>
+              <span class="tag">Programming: C++, GLSL</span>
+            </div>
+            <p>An anime-style 3D scene of a girl sitting on a hill, created with C++ and GLSL. </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/glsl-project/cover.png" alt="GLSL Project Cover" class="project-image">
+            <video class="project-video" muted loop autoplay playsinline>
+              <source src="./img/glsl-project/cover-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+86 189 3077 0757</h2>
+            <h2>+1  404 490 7894</h2>
+            <h2>+65 9454 9790</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>jessicali2002@outlook.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Singapore, Singapore</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/jessicalixiangyi/"><img src="https://img.icons8.com/?size=100&id=ZADJgisVhP37&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/xli983"><img src="https://img.icons8.com/?size=100&id=3R1xLIHPgzn5&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/fudoshin_xy/"><img src="https://img.icons8.com/?size=100&id=7EXckkhdLcU5&format=png&color=000000" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="./typingeffect.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+  <title>Xiangyi Li</title>
+</head>
+
+<body class="subpage">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html#intro">
+            <h1><span>X</span>iangyi <span>L</span>i</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html#intro" data-after="Home">Home</a></li>
+            <li><a href="index.html#about" data-after="About">About</a></li>
+            <li><a href="index.html#projects" data-after="Projects">Projects</a></li>
+            <li><a href="index.html#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Header -->
+   
+  <section id="hero-section">
+  </section>
+
+  <!-- Content Section -->
+  <section id="content">
+
+    <div class="content container">
+      <div class="content-header">
+        <h1 class="section-title">GLSL <span>Project</span></h1>
+        <h2>- An 3D Scene made during spring semester 2024 at Georgia Institute of Technology -</h2>
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">Demo <span>Video</span></h1>
+      </div>
+    
+  
+      <div class="youtube-container">
+        <iframe 
+          src="https://www.youtube.com/embed/pr7XYCydQU0" 
+          title="GLSL Project" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">About The <span>Project</span></h1>
+      </div>
+
+      <div class="game-container">
+          <div class="about-box">
+            <p><strong>My Role:</strong>  Team Lead, Programmer, Designer</p>
+            <p><strong>Tools:</strong>  C++, GLSL</p>
+            <p><strong>Genre:</strong>  3D Scene</p>
+            <p><strong>Timeline:</strong> 2 weeks</p>
+            <p><strong>Team Size:</strong>  3 </p>
+          </div>
+        <div class="about-text">
+          <p>Using C++ and GLSL, we made a 3D scene of a girl, Angelina, sitting on a hill with grass, water,
+             and a skybox, all rendered in an anime-style aesthetic. As the team leader, I was specifically in 
+             charge of the skybox and character.
+
+          </p>
+          <p>This project was created with other two students: Xuanhan Zhou (Programmer), Lining Song (Programmer).
+          </p>
+        </div> 
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">My <span>Contribution</span></h1>
+      </div>
+
+      <div class="role-container">
+        <ol>
+          <li>
+            <p> Initial Concept Sketch </p>
+            <figure>
+              <img src="./img/glsl-project/concept.jpg" alt="Concept Sketch">
+              <figcaption>Initial Concept Sketch </figcaption>
+            </figure>
+            <p>
+              I created the initial concept sketch to guide the project's direction.
+            </p>
+          </li>
+      
+          <li>
+            <p>Skybox and Implementation</p>
+              <figure>
+                <img src="./img/glsl-project/skybox.png" alt="Skybox">
+                <figcaption>Skybox box texture (left); Skybox integrated (right)</figcaption>
+              </figure>
+            <p>
+              I drew the skybox in Photoshop and integrated it into the project by transformation of texture.
+            </p>
+          </li>
+
+          <li>
+            <p>Character Rigging and Integration</p>
+              <figure>
+                <img src="./img/glsl-project/model.png" alt="model">
+                <figcaption>Downloaded model (left); posed model (right)</figcaption>
+              </figure>
+            <p>
+              Even though the model came with an initial rig, I improved and edited the rigging using Blender to fit our project. I also posed the character using Blender.
+              Next, I standardized the origin location and imported each body part into the project as independent components to apply unique shaders to each part.
+            </p>
+          </li>
+
+          <li>
+            <p>SDF Mapping and Toon Shading for face and skin</p>
+            <div class="image-gallery">
+              <figure>
+                <img src="./img/glsl-project/sdf.png" alt="SDF-effect on face">
+                <figcaption>SDF map (left); Shape of Shadow on Face using SDF (right)</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/glsl-project/toon-shading.png" alt="Comparing Toon Shading with color ramp">
+                <figcaption>Basic Toon Shading Compare to Toon Shading with Color Ramp</figcaption>
+              </figure>
+            </div>
+            <p>
+              I implemented my own shader for the face by combining SDF mapping and toon shading with color bands, achieving a polished anime-style aesthetic.
+              SDF map defines the shape of shadow with one light  (instead of relying on light interaction with the geometric mesh object) to create a 2D cartoon shading effect on the face.
+              Toon shading converts complex lighting into a range of colors sampled from a color band. A color ramp is used to map colors across the gradient, defining transitions between color bands.
+               Color tuning is used to ensure light and shadow relations appear more aesthetically pleasing.
+            </p>
+          </li>
+      
+          <li>
+            <p>Cloth Texture Shading</p>
+              <figure>
+                <img src="./img/glsl-project/cloth.png" alt="Cloth Shading">
+                <figcaption>Cloth Shading with Normal Map</figcaption>
+              </figure>
+          </li>
+
+                
+          <li>
+            <p>Grass</p>
+              <figure>
+                <img src="./img/glsl-project/grass.png" alt="grass">
+                <figcaption>Grass Texture (Down Left); Billboard of Multiple Grass Texture (Down Right)</figcaption>
+              </figure>
+            <p>
+              I collaborated with my teammates on grass and terrain generation.
+               Each blade of grass was rendered as a billboard with a grass texture,
+                and we combined multiple billboards at rotated angles to mimic 3D grass clusters.
+                 To simulate wind motion with height dependency, we animated the billboards using
+                  FBM noise in the vertex shader.
+            </p>
+          </li>
+
+
+        </ol>
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">Other <span>Projects</span></h1>
+      </div>
+
+        
+      <div class="role-container">
+        <p>This is the final project for the class CS3451 Computer Graphics, here are more cool stuff I did in this class :) Everything is done in C++ and GLSL</p>
+        <div class="image-gallery">
+          <figure>
+            <video controls>
+              <source src="./img/glsl-project/bg-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Sunset in Shanghai, video created using shader</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/glsl-project/ray-tracing.png" alt="ray tracing">
+            <figcaption>Ray Tracing Alogorithm</figcaption>
+          </figure>
+        </div>
+
+        <div class="image-gallery">
+          <figure>
+            <video controls>
+              <source src="./img/glsl-project/loop-subdivision.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Loop Subdivision Algorithm</figcaption>
+          </figure>
+          <figure>
+            <img src="./img/glsl-project/subdivision-application.png" alt="Loop Subdivision Algorithm Application">
+            <figcaption>Using the Subdivision Algorithm on a Low-poly Model Made for the Game, Equinox</figcaption>
+          </figure>
+        </div>
+        
+      </div>
+
+
+
+
+
+    </div>
+      
+  </section>
+  
+  
+  
+  <!-- End Content Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/jessicalixiangyi/"><img src="https://img.icons8.com/?size=100&id=ZADJgisVhP37&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/xli983"><img src="https://img.icons8.com/?size=100&id=3R1xLIHPgzn5&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/fudoshin_xy/"><img src="https://img.icons8.com/?size=100&id=7EXckkhdLcU5&format=png&color=000000" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="./typingeffect.js"></script>
+</body>
+
+</html>
