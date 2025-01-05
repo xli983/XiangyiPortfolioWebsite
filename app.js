@@ -40,6 +40,16 @@ document.querySelectorAll('.project-item').forEach(item => {
 		}
 	});
 });
+
+
+document.querySelectorAll('#hero-section').forEach(section => {
+	const bgImage = section.getAttribute('data-bg');
+	if (bgImage) {
+		section.style.backgroundImage = `url(${bgImage})`;
+	}
+});
+
+
   
   
   

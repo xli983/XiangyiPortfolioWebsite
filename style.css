@@ -356,6 +356,18 @@ p {
 	display: block;
 }
   
+#projects .project-hover-image {
+	display: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+  }
+
 #projects .project-img video {
 	display: none;
 	width: 100%;
@@ -368,16 +380,20 @@ p {
 }
   
 #projects .project-item:hover .project-img img {
-	opacity: 0;
+  opacity: 0;
 }
-  
+
 #projects .project-item:hover .project-img video {
-	display: block;
-	opacity: 1;
+  display: block;
+  opacity: 1;
 }
-  
+#projects .project-item:hover .project-img .project-hover-image {
+  display: block;
+  opacity: 1;
+}
+
 #projects .project-item:hover .project-img:after {
-	opacity: 0;
+  opacity: 0;
 }
 
 
@@ -411,14 +427,14 @@ p {
 /* Content section */
 /* Hero Section Background */
 #hero-section {
-	background-image: url('./img/phantom-train/background-image.jpg');
-	background-size: cover;
-	background-position: center;
-	height: 20rem; 
-	position: relative;
-	padding-top: 5rem; 
-	box-sizing: border-box; 
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+    padding-top: 5rem;
+    box-sizing: border-box;
 }
+
   
 #content {
 	margin-top: -3rem;
