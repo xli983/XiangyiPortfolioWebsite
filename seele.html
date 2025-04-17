@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+  <title>Xiangyi Li</title>
+</head>
+
+<body class="subpage">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="index.html#intro">
+            <h1><span>X</span>iangyi <span>L</span>i</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html#intro" data-after="Home">Home</a></li>
+            <li><a href="index.html#about" data-after="About">About</a></li>
+            <li><a href="index.html#projects" data-after="Projects">Projects</a></li>
+            <li><a href="index.html#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Header -->
+   
+  <section id="hero-section" data-bg="./img/seele/cover.png">
+  </section>
+
+  <!-- Content Section -->
+  <section id="content">
+
+    <div class="content container">
+      <div class="content-header">
+        <h1 class="section-title">Project: <span>SEELE</span></h1>
+        <h2>- An Action Game made during spring semester 2025 at National University of Singapore (Exchange) -</h2>
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">Demo <span>Video</span></h1>
+      </div>
+    
+  
+      <div class="youtube-container">
+        <iframe 
+          src="https://www.youtube.com/embed/Ku0Hf-VadXI" 
+          title="Project: SEELE - Demo Video" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">About The <span>Game</span></h1>
+      </div>
+
+      <div class="game-container">
+          <div class="about-box">
+            <p><strong>My Role:</strong> Lead Artist, Technical Artist</p>
+            <p><strong>Tools:</strong>  Unreal, Zbrush, Blender, Substance Designer, Substance Painter, Photoshop...</p>
+            <p><strong>Genre:</strong>  3D Action Game</p>
+            <p><strong>Timeline:</strong> 3 month</p>
+            <p><strong>Team Size:</strong>  5-10 </p>
+          </div>
+        <div class="about-text">
+          <p>Project SEELE is a fast-paced third-person action game set in a cyberpunk future. Guide a Cyborg Girl to fight through enemies using a dynamic combat system with basic mechanics like Attacking, Dodging, Blocking, and unique Combos and Special Abilities -- the power of SEELE.
+
+            Explore stunning maps and immersive environments with handcrafted original characters and cinematic boss battles. Experience combat driven by adaptive enemy AI that responds to your style. The gameplay weaves in deep narrative themes exploring control, identity, and reality.
+
+            <a href="https://uvents.nus.edu.sg/event/26th-steps/module/CS3247/project/10" target="_blank" rel="noopener noreferrer">Learn more about it here!</a>
+        </div> 
+      </div>
+
+      <div class="sub-header">
+        <h1 class="sub-title">My <span>Contribution</span></h1>
+      </div>
+
+      <div class="role-container">
+        <ol>
+          <li>
+            <p>I am the lead artist, responsible for setting the art direction and pipeline, and coordinating everything related to visuals — including art style, atmosphere, map aesthetics, concept art, visual effects, and decisions on which assets to purchase or create in-house.</p>
+            <figure class="role-image">
+              <img src="./img/seele/map.png" alt="Map Planning">
+              <figcaption>Part of our Map Planning Board</figcaption>
+            </figure>
+          </li>
+      
+          <li>
+            <p>Created a 100% hand-crafted main character! From concept art to implementation.</p>
+            <div class="image-gallery">
+              <figure>
+                <img src="./img/seele/art.png" alt="Character Process">
+                <figcaption>Character Creation Process</figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <p>I also optimize maps and environments </p>
+            <div class="image-gallery">
+              <figure>
+                <img src="./img/seele/before_1.png" alt="Before_1">
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="./img/seele/before_2.png" alt="Before_2">
+                <figcaption>Before</figcaption>
+              </figure>
+            </div>
+            <div class="image-gallery">
+              <figure>
+                <img src="./img/seele/after.png" alt="After">
+                <figcaption>After Optimization</figcaption>
+              </figure>
+            </div>
+            <p>
+              Often receiving levels from artists that run at single-digit frame rates. Through efficient lighting setups, shader refinement, Nanite and LOD management, and custom tools developed with Python and Unreal Engine's API, I was able to boost performance dramatically, bringing the frame rate up to a stable 60 FPS.
+            </p>
+            <p>
+              I also developed a custom tool to toggle Nanite support across scenes. It enables Nanite only for opaque objects or those that can generate an opaque version. Since many materials use masked blending modes—even when alpha masking is disabled—I built a system that automatically creates Nanite-compatible versions of those materials. This includes updating both master materials and their instances. When toggling Nanite, the tool also switches to the appropriate material variant, ensuring full compatibility and visual consistency.
+            </p>
+            
+          </li>
+      
+          <li>
+            <p>Dealing with many UE technical problems! Including VFX artifacts, animation retargeting, post-processing...</p>
+          </li>
+
+          <li>
+            <p>Also I did all the promotional art and videos :）</p>
+            <figure class="role-image">
+              <img src="./img/seele/poster_8bit.png" alt="Poster">
+              <figcaption>Poster</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </div>
+      
+  </section>
+  
+  
+  
+  <!-- End Content Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/jessicalixiangyi/"><img src="https://img.icons8.com/?size=100&id=ZADJgisVhP37&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/xli983"><img src="https://img.icons8.com/?size=100&id=3R1xLIHPgzn5&format=png&color=000000" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/fudoshin_xy/"><img src="https://img.icons8.com/?size=100&id=7EXckkhdLcU5&format=png&color=000000" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+  <script src="./typingeffect.js"></script>
+</body>
+
+</html>
